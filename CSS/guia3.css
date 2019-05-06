@@ -1,0 +1,12 @@
+.linea{
+    height: 500px;
+    background-color:plum;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.bloque{
+    height: 500px;
+    background-color: plum;
+}

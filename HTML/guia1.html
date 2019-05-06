@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi primera pagina en HTML</title>
+</head>
+<body>
+
+    <!-- (h$>{titulo $})*6 -->
+   <!-- Control space + enter (para ejecutar) -->
+    <h1>titulo1</h1>
+    <h2>titulo2</h2>
+    <h3>titulo3</h3>
+    <h4>titulo4</h4>
+    <h5>titulo5</h5>
+    <h6>titulo6</h6>
+
+    <!-- la instruccion genera las lineas las lineas desde la 24 hasta la 28  -->
+<!-- section>(header>{titulo de la seccion})+(p>lorem10)+footer>span>{desarrollado por borianyi} -->
+<!-- Control space + enter -->
+<section>
+    <header>titulo de la seccion</header>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, velit.</p>
+    <footer><span>desarrollado por borianyi</span></footer>
+</section>
+
+    <!-- saltos en lineas -->
+<br><br><br>
+
+<!-- Crear tabla 3*3  -->
+<!-- table>thead>(tr>(th{titulo})*3)+tbody>(tr>(td>{valor})*3)*3 -->
+<!-- Control space + enter -->
+<table border width="100%">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+        </tr>
+        <tbody aling="center"> 
+            <tr>
+                <td>Borianyi</td>
+                <td>Serrano</td>
+                <td>0414.019.42.43</tr/td>
+            </tr>
+            <tr>
+                <td>Boris</td>
+                <td>Serrano</td>
+                <td>0424.212.03.40</td>
+            </tr>
+            <tr>
+                <td>Consuelo</td>
+                <td>Orta</td>
+                <td>0424.292.41.14</td>
+            </tr>
+        </tbody>
+    </thead>
+</table>
+
+<!-- agrega nueva seccion  -->
+<!-- section>(header>{cabecera de la seccion})+((article>(header>{cabecera del articulo})+(p>lorem15)+footer>{pie del articulo})*2)+footer>{pie de la seccion} -->
+<!-- Control space + enter --> 
+
+<section>
+    <header>cabecera de la seccion</header>
+    <article>
+        <header>cabecera del articulo</header>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium corrupti reprehenderit facilis repudiandae ipsa voluptatem?</p>
+        <footer>pie del articulo</footer>
+    </article>
+    <article>
+        <header>cabecera del articulo</header>
+        <p>Officia voluptatem, hic suscipit molestias non ducimus, sed itaque velit tempora laboriosam porro, cum ab.</p>
+        <footer>pie del articulo</footer>
+    </article>
+    <footer>pie de la seccion</footer>
+</section>
+
+<!-- saltos en linea  -->
+<br><br><br<br>
+
+<!-- comienza la imagen  -->
+<h1>Etiqueta Imagen</h1>
+
+<!-- src= ubicacion, controls= agrega elemento de reproduccion  -->
+<!-- Elegir la imagen, altura, tamaño  -->
+<img src="IMG/IMG-1.jpg" alt="Sandwich" width="600" height="auto">
+
+<!-- saltos de linea  -->
+<br><br><br<br>
+
+<h1>Etiqueta Audio</h1>
+<audio src="MULTIMEDIA/VID-20180131-WA0041.mp4" controls autoplay 
+width="50%" height="auto"></audio>
+
+<br><br><br<br>
+
+<h1>Etiqueta Video</h1>
+
+<video src="MULTIMEDIA/VID-20180131-WA0041.mp4" controls
+width="50%" height="auto"></video>
+
+<br><br><br<br>
+
+<h1>Etiqueta iframe</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9jANzag3Jy8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+<iframe src="https://es.wikipedia.org/wiki/Fundaci%C3%B3n_Wikimedia" frameborder="0"
+width="70%" height="auto"></iframe>
+
+
+</body>
+</html>
