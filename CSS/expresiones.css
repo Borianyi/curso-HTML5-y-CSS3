@@ -1,0 +1,15 @@
+/* las expresiones se llaman con corchete */
+/* para buscar coincidencias al principio de una cadena */
+[class^="gri"]{
+    color: red;
+}
+
+/* para buscar coincidencias al final de una cadena */
+[class$="los"]{
+    color: blue;
+}
+
+/* para buscar coincidencias en cualquier parte de una cadena */
+[class*="ril"]{
+    color: blueviolet;
+}

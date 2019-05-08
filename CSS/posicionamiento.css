@@ -1,0 +1,45 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    border: 10px solid orange;
+    background-color: blue;
+    color: whitesmoke;
+    line-height: 160px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#estatico{
+    position: static;
+    top: 500px;
+}
+
+#relativo{
+position: relative;
+left: 300px;
+top: 200px;
+}
+
+#abolute{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+}
+
+.padre{
+    position: relative;
+    top: 500px;
+    background-color: aqua;
+}
+
+#fijo{
+    position: fixed;
+    top: 0;
+    left: 400px;
+}
+
+#flotante{
+    float: right;
+}
