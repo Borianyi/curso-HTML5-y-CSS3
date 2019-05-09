@@ -1,0 +1,92 @@
+.cambio{
+    background-color: rgb(195, 90, 199)!important;
+    color: black!important;
+    border: 1px solid olive!important;
+}
+
+.boton{
+    width: 80%;
+    display: block;
+    background-color: rgb(108, 180, 174);
+    color: rgb(151, 102, 201);
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 25px 0;
+    margin-bottom: 10px;
+    border: 2px solid rgb(216, 100, 216);
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    box-shadow: 12px 12px 9px 0px rgba(50, 57, 96, 0.88);}
+
+h2{
+    text-align: center;
+    color: rgb(25, 148, 148);
+    font-weight: bold;
+    text-shadow: 3px 3px 0px rgba(106, 211, 110, 0.83);
+}
+
+.boton:hover{
+    background-color: transparent;
+    border: 3px dotted rgb(80, 80, 177);
+    text-transform: capitalize;
+    box-shadow: 4px 4px 10px 0px rgb(25, 148, 148);
+    color: blueviolet;
+    transition: all 700ms ease;
+}
+
+.sprite{
+    background-image: url("../IMG/sprite.png");
+    display: block;
+    width: 84px;
+    height: 84px;
+    text-decoration: none;
+    border-radius: 50%;
+    /* transition: all 1s linear; */
+}
+
+.facebook{
+    background-position: 0 -84px;
+}
+
+.skype{
+    background-position: -588px -84px; 
+}
+
+.pinterest{
+    background-position: -420px -84px; 
+}
+
+.facebook:hover{
+    background-position: 0 -168px;
+    transition: all 1s linear;
+}
+
+.skype:hover{
+       background-position: -588px -168px; 
+    transition: all 1s linear;
+    }
+
+.pinterest:hover{
+    background-position: -420px -168px; 
+    transition: all 500ms linear;
+    }
+
+.facebook:active{
+    background-position: 0 -252px;
+    transition: all 500ms linear;
+
+    }
+    
+.skype:active{
+    background-position: -588px -252px; 
+    transition: all 500ms linear;
+    }
+
+.pinterest:active{
+    background-position: -420px -252px; 
+    transition: all 500ms linear;
+    }
+
+    
