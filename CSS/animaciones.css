@@ -1,0 +1,98 @@
+.caja{
+    width: 80%;
+    padding: 20px;
+    background-color: violet;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.caja p{
+    padding: 50px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: navy;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.estilo{
+    color: white;
+    font-size: 60px;
+}
+
+@keyframes girar{
+    from{
+        transform: rotateX(0deg);
+
+    }
+
+    to{
+        transform: rotateX(360deg);
+    }
+}
+
+.animacion1{
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes volar{
+    0%{
+        opacity: 0;
+        left: 0;
+        top:-200px;
+        transform: rotateZ(90deg);
+    }
+    20%{
+        opacity: 1;
+        left: 0;
+        top: 0;
+        transform: rotateZ(0deg) scale(2,2);
+    }
+    30%{
+        opacity: 1;
+        left: -150px;
+        top: 0;
+        transform: rotateZ(0deg);
+    }
+
+    50%{
+        opacity: 1;
+        left: 0px;
+        top: 0;
+        transform: rotateZ(0deg);
+    }
+    60%{
+        opacity: 1;
+        left: -50px;
+        top: 0;
+        transform: rotateZ(0deg);
+    }
+    100%{
+        opacity: 0;
+        left: 300px;
+        top: 0;
+        transform: rotateZ(0deg);
+    }
+}
+
+.animacion2{
+    position: relative;
+    top: -200px;
+    animation-name: volar;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.caja:hover{
+    animation-name: bounceOutUp;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
