@@ -1,0 +1,37 @@
+body{
+background-color: rgb(215, 156, 233);
+font-family: fantasy;
+}  
+
+.parallax{
+    background-image: url("../IMG/IMG-7.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#landing{
+    height: 500px;
+}
+
+#pie{
+    height: 200px;
+}
+
+.pie-footer{
+    font-weight: 600;
+    position: absolute;
+    bottom: 10px;
+    text-align: center,
+}
+
+.titulo{
+    color: aqua;
+    font-style: italic;
+    font-size: 1.4em;
+
+}
+
+.modal-header, .modal-footer{
+    background-color: coral;
+}

@@ -7,9 +7,9 @@
     <title>Clase bootstrap</title>
     <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
 
-    <script> src="../bootstrap-4.3.1-dist/js/jquery-3.3.1.slim.min.js" </script>
-    <script> src="../bootstrap-4.3.1-dist/js/popper.min.js" </script>
-    <script> src="../bootstrap-4.3.1-dist/js/bootstrap.min.js" </script>
+    <script src="../bootstrap-4.3.1-dist/js/jquery-3.3.1.slim.min.js" > </script>
+    <script src="../bootstrap-4.3.1-dist/js/popper.min.js" > </script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js">  </script>
 
     <link rel="stylesheet" href="../CSS/perfil2.css">
 </head>
@@ -18,7 +18,7 @@
 <!-- section.container-fluid>.row>(article.col-12.col-sm-4>(h3.text-center.text-uppercase.titulo>{titulo})+p.text-center.font-italic.parrafo>lorem15)*3 -->
 
 <section class="container-fluid">
-    <div class="row">
+    <div class="row pb-5">
         <article class="col-12 col-sm-4">
             <h3 class="text-center text-uppercase titulo">titulo</h3>
             <p class="text-center font-italic parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis temporibus ducimus praesentium, dolor accusantium culpa.</p>
@@ -33,10 +33,10 @@
         </article>
     </div>
 
-    <!-- .row>(article.col-12.col-sm-6>img.img.fluid.rounded.mx-auto.d-block)+article.col-12.col-12.col-sm-6>(h3.text-center.text-uppercase.titulo>{subtitulo})+p.parrafo.text-center.font-italic>lorem15 -->
+    <!-- .row>(article.col-12.col-sm-6>img.img-fluid.rounded.mx-auto.d-block)+article.col-12.col-12.col-sm-6>(h3.text-center.text-uppercase.titulo>{subtitulo})+p.parrafo.text-center.font-italic>lorem15 -->
 
-    <div class="row">
-        <article class="col-12 col-sm-6"><img src="" alt="" class="img fluid rounded mx-auto d-block"></article>
+    <div class="row pb-5">
+        <article class="col-12 col-sm-6"><img src="../IMG/IMG-8.jpg" alt="lago" class="img-fluid rounded mx-auto d-block"></article>
         <article class="col-12 col-sm-6">
             <h3 class="text-center text-uppercase titulo">subtitulo</h3>
             <p class="parrafo text-center font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eius! Pariatur quis molestiae fuga cum!</p>
@@ -44,6 +44,120 @@
     </div>
 
 </section>
+
+<!-- section.container>section.parallax#landing -->
+
+<section class="container pb-5">
+    <section class="parallax" id="landing"></section>
+</section>
+
+<!-- section.container-fluid>.row>(article.col-sm-4.col-12>(h5.text-capitalize.font-weight-bold>{subtitulo})+p.text-justify.parrafo>lorem15)*3 -->
+
+<section class="container-fluid">
+    <div class="row">
+        <article class="col-sm-4 col-12">
+            <h5 class="text-capitalize font-weight-bold">subtitulo</h5>
+            <p class="text-justify parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maxime velit repellat explicabo ipsam voluptatem.</p>
+        </article>
+        <article class="col-sm-4 col-12">
+            <h5 class="text-capitalize font-weight-bold">subtitulo</h5>
+            <p class="text-justify parrafo">Doloremque, fugit! Itaque corrupti mollitia sed, expedita id excepturi quos sint asperiores laudantium explicabo velit?</p>
+        </article>
+        <article class="col-sm-4 col-12">
+            <h5 class="text-capitalize font-weight-bold">subtitulo</h5>
+            <p class="text-justify parrafo">Nulla, officia velit. Exercitationem at et hic ipsam molestiae necessitatibus atque nihil neque impedit unde!</p>
+        </article>
+    </div>
+</section>
+
+<!-- footer.parallax#pie>p.pie-footer>{desarrollado por @borianyi} -->
+
+<footer class="parallax position-relative" id="pie">
+    <p class="pie-footer d-flex justify-content-center col-12">Desarrollado por Borianyi Serrano
+
+    <button type="button" class="btn btn-danger ml-3" data-toggle="modal" data-target="#exampleModal">Contacto</button>
+
+</p>
+
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulario de Contacto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="">
+        <div class="modal-body">
+
+                <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pedro Perez">
+                        <small id="emailHelp" class="form-text text-muted">*Campo Obligatorio</small>
+                      </div>
+
+                      <div class="form-group">
+                            <label for="exampleInputEmail1">Correo Electronico</label>
+                            <input type="email" 
+                            class="form-control" id="exampleInputEmail1" 
+                            aria-describedby="emailHelp"
+                             placeholder="example@example.com">
+                          
+                          </div>
+
+                          <div class="form-group">
+                                <label for="exampleInputEmail1">Edad</label>
+                                <input type="number" class="form-control" 
+                                id="exampleInputEmail1" 
+                                aria-describedby="emailHelp">
+                            
+                              </div>
+                            
+                              <label>Sexo</label>
+
+                              <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Masculino" checked>  
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      Masculino
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Femenino">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                      Femenino 
+                                    </label>
+                                  </div>
+
+                                  <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Pais de Nacimiento</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option value="AR">Argentina/<option>
+                                          <option value="CO">Colombia</option>
+                                          <option value="BR">Brasil</option>
+                                          <option value="EC">Ecuador</option>
+                                          <option value="VE">Venezuela</option>
+                                        </select>
+                                      </div>
+
+                                      <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Deje su mensaje</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            maxlength="160"></textarea>
+                                          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
