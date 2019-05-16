@@ -35,3 +35,17 @@ font-family: fantasy;
 .modal-header, .modal-footer{
     background-color: coral;
 }
+
+.navbar{
+    opacity: 0.5;
+    background-color: rgb(214, 214, 57);
+    z-index: 1;
+}
+
+.dropdown-menu{
+    background-color: cadetblue!important;
+}
+
+.icono{
+    font-size: 30px;
+}
